@@ -27,17 +27,65 @@ public class Window_Manager extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn_Acciones_Agentes_Administrador = new javax.swing.JButton();
+        btn_Listar_Subastas_Administrador = new javax.swing.JButton();
+        btn_Listar_Historial_Subastas_Administrador = new javax.swing.JButton();
+        btn_Listar_Historial_Subastas_Usuarios_Administrador = new javax.swing.JButton();
+        btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador = new javax.swing.JButton();
+        btn_Modificar_Comision_Administrador = new javax.swing.JButton();
+        btn_Modificar_Monto_Oferta_Administrador = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btn_Acciones_Agentes_Administrador.setText("Acciones sobre Agentes");
+
+        btn_Listar_Subastas_Administrador.setText("Listar Subastas");
+
+        btn_Listar_Historial_Subastas_Administrador.setText("Listar Historial de ofertas por Subasta ");
+        btn_Listar_Historial_Subastas_Administrador.setToolTipText("");
+
+        btn_Listar_Historial_Subastas_Usuarios_Administrador.setText("Listar Historial de Subastas por Usuario");
+
+        btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador.setText("Listar Historial de ofertas ganadoras por Usuario");
+
+        btn_Modificar_Comision_Administrador.setText("Modificar Comision por Subasta");
+
+        btn_Modificar_Monto_Oferta_Administrador.setText("Modificar monto minimo de oferta");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(322, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn_Acciones_Agentes_Administrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Listar_Subastas_Administrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Listar_Historial_Subastas_Administrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Listar_Historial_Subastas_Usuarios_Administrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Modificar_Comision_Administrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Modificar_Monto_Oferta_Administrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(btn_Acciones_Agentes_Administrador)
+                .addGap(18, 18, 18)
+                .addComponent(btn_Listar_Subastas_Administrador)
+                .addGap(18, 18, 18)
+                .addComponent(btn_Listar_Historial_Subastas_Administrador)
+                .addGap(18, 18, 18)
+                .addComponent(btn_Listar_Historial_Subastas_Usuarios_Administrador)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador)
+                .addGap(18, 18, 18)
+                .addComponent(btn_Modificar_Comision_Administrador)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_Modificar_Monto_Oferta_Administrador)
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,5 +127,12 @@ public class Window_Manager extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_Acciones_Agentes_Administrador;
+    private javax.swing.JButton btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador;
+    private javax.swing.JButton btn_Listar_Historial_Subastas_Administrador;
+    private javax.swing.JButton btn_Listar_Historial_Subastas_Usuarios_Administrador;
+    private javax.swing.JButton btn_Listar_Subastas_Administrador;
+    private javax.swing.JButton btn_Modificar_Comision_Administrador;
+    private javax.swing.JButton btn_Modificar_Monto_Oferta_Administrador;
     // End of variables declaration//GEN-END:variables
 }
