@@ -27,17 +27,46 @@ public class Window_Actions_Agents extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn_Crear_Agente = new javax.swing.JButton();
+        btn_Suspender_Agente = new javax.swing.JButton();
+        btn_Reactivar_Agente = new javax.swing.JButton();
+        btn_Modificar_Agente = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btn_Crear_Agente.setText("Crear");
+
+        btn_Suspender_Agente.setText("Suspender");
+
+        btn_Reactivar_Agente.setText("Reactivar");
+
+        btn_Modificar_Agente.setText("Modificar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(144, 144, 144)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn_Suspender_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Crear_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Reactivar_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Modificar_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(163, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(btn_Crear_Agente)
+                .addGap(18, 18, 18)
+                .addComponent(btn_Suspender_Agente)
+                .addGap(18, 18, 18)
+                .addComponent(btn_Reactivar_Agente)
+                .addGap(18, 18, 18)
+                .addComponent(btn_Modificar_Agente)
+                .addContainerGap(101, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,5 +108,9 @@ public class Window_Actions_Agents extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_Crear_Agente;
+    private javax.swing.JButton btn_Modificar_Agente;
+    private javax.swing.JButton btn_Reactivar_Agente;
+    private javax.swing.JButton btn_Suspender_Agente;
     // End of variables declaration//GEN-END:variables
 }
