@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Views;
+package View_Agent;
 
 /**
  *
  * @author Daniel
  */
-public class Window_Actions_Agents extends javax.swing.JFrame {
+public class Window_Actions_User extends javax.swing.JFrame {
 
     /**
-     * Creates new form Window_Actions_Agents
+     * Creates new form Window_Actions_User
      */
-    public Window_Actions_Agents() {
+    public Window_Actions_User() {
         initComponents();
     }
 
@@ -27,46 +27,40 @@ public class Window_Actions_Agents extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btn_Crear_Agente = new javax.swing.JButton();
-        btn_Suspender_Agente = new javax.swing.JButton();
-        btn_Reactivar_Agente = new javax.swing.JButton();
-        btn_Modificar_Agente = new javax.swing.JButton();
+        btn_Modificar_Participante = new javax.swing.JButton();
+        btn_Suspender_Participantes = new javax.swing.JButton();
+        Btn_Reactivar_Participante = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btn_Crear_Agente.setText("Crear");
+        btn_Modificar_Participante.setText("Modificar");
 
-        btn_Suspender_Agente.setText("Suspender");
+        btn_Suspender_Participantes.setText("Suspender");
 
-        btn_Reactivar_Agente.setText("Reactivar");
-
-        btn_Modificar_Agente.setText("Modificar");
+        Btn_Reactivar_Participante.setText("Reactivar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(144, 144, 144)
+                .addGap(137, 137, 137)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btn_Suspender_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_Crear_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_Reactivar_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_Modificar_Agente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(163, Short.MAX_VALUE))
+                    .addComponent(btn_Suspender_Participantes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Modificar_Participante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Btn_Reactivar_Participante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(btn_Crear_Agente)
-                .addGap(18, 18, 18)
-                .addComponent(btn_Suspender_Agente)
-                .addGap(18, 18, 18)
-                .addComponent(btn_Reactivar_Agente)
-                .addGap(18, 18, 18)
-                .addComponent(btn_Modificar_Agente)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addGap(44, 44, 44)
+                .addComponent(btn_Modificar_Participante)
+                .addGap(36, 36, 36)
+                .addComponent(btn_Suspender_Participantes)
+                .addGap(34, 34, 34)
+                .addComponent(Btn_Reactivar_Participante)
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         pack();
@@ -89,28 +83,27 @@ public class Window_Actions_Agents extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Window_Actions_Agents.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Window_Actions_User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Window_Actions_Agents.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Window_Actions_User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Window_Actions_Agents.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Window_Actions_User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Window_Actions_Agents.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Window_Actions_User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Window_Actions_Agents().setVisible(true);
+                new Window_Actions_User().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_Crear_Agente;
-    private javax.swing.JButton btn_Modificar_Agente;
-    private javax.swing.JButton btn_Reactivar_Agente;
-    private javax.swing.JButton btn_Suspender_Agente;
+    private javax.swing.JButton Btn_Reactivar_Participante;
+    private javax.swing.JButton btn_Modificar_Participante;
+    private javax.swing.JButton btn_Suspender_Participantes;
     // End of variables declaration//GEN-END:variables
 }

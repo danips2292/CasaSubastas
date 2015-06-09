@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="btnRegistar_Nuevos_Participantes" max="32767" attributes="0"/>
+                  <Component id="btn_Agregar_Tarjeta_Credito" max="32767" attributes="0"/>
+                  <Component id="btn_Acciones_Sobre_Partcipante" max="32767" attributes="0"/>
+                  <Component id="btn_Listar_Subastas_Agente" max="32767" attributes="0"/>
+                  <Component id="btn_Listar_Historial_Ofertas_Subasta" max="32767" attributes="0"/>
+                  <Component id="btn_Listar_Historial_Subastas_Usuario" max="32767" attributes="0"/>
+                  <Component id="btn_Listar_Ofertas_Ganadoras_Usuario" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace pref="54" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <Component id="btnRegistar_Nuevos_Participantes" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_Agregar_Tarjeta_Credito" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_Acciones_Sobre_Partcipante" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_Listar_Subastas_Agente" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_Listar_Historial_Ofertas_Subasta" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_Listar_Historial_Subastas_Usuario" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_Listar_Ofertas_Ganadoras_Usuario" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="40" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnRegistar_Nuevos_Participantes">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Registar Nuevos Participantes"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Agregar_Tarjeta_Credito">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Agregar Tarjeta de Credito"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Acciones_Sobre_Partcipante">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Acciones sobre un Participante"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Listar_Subastas_Agente">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Listar Subastas"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Listar_Historial_Ofertas_Subasta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Historial de ofertas por Subasta"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Listar_Historial_Subastas_Usuario">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Historial de Subastas por Usuario"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Listar_Ofertas_Ganadoras_Usuario">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Historial de ofertas ganadoras de un usuario"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
