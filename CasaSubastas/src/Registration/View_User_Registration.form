@@ -33,30 +33,32 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lbl_Nombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbl_Apellido_Paterno" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbl_Apellido_Materno" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lbl_Alias" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lbl_Cedula" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lbl_Direccion" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lbl_Telefono" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lbl_Password" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbl_ID" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbl_Nombre" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbl_Apellido_Paterno" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbl_Apellido_Materno" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="TextField_Apellido_Materno_Usuario_Registro" pref="368" max="32767" attributes="0"/>
+                  <Component id="TextField_Apellido_Paterno_Usuario_Registro" pref="368" max="32767" attributes="0"/>
+                  <Component id="TextField_Nombre_Usuario_Registro" pref="368" max="32767" attributes="0"/>
                   <Component id="btn_Aceptar_Usuario_Registro" min="-2" max="-2" attributes="0"/>
-                  <Component id="TextField_Nombre_Usuario_Registro" max="32767" attributes="0"/>
-                  <Component id="TextField_Apellido_Paterno_Usuario_Registro" alignment="0" max="32767" attributes="0"/>
-                  <Component id="TextField_Apellido_Materno_Usuario_Registro" alignment="0" max="32767" attributes="0"/>
-                  <Component id="TextField_Alias_Usuario_Registro" alignment="0" max="32767" attributes="0"/>
+                  <Component id="TextField_Alias_Usuario_Registro" alignment="0" pref="368" max="32767" attributes="0"/>
                   <Component id="TextField_Cedula_Usuario_Registro" alignment="0" max="32767" attributes="0"/>
                   <Component id="TextField_Direccion_Usuario_Registro" alignment="0" max="32767" attributes="0"/>
                   <Component id="TextField_Telefono_Usuario_Registro" alignment="0" max="32767" attributes="0"/>
                   <Component id="TextField_Password_Usuario_Registro" alignment="0" max="32767" attributes="0"/>
-                  <Component id="TextField_Id_Usuario_Registro" alignment="0" pref="368" max="32767" attributes="0"/>
+                  <Component id="TextField_Correo_Registro" alignment="0" max="32767" attributes="0"/>
+                  <Component id="TextField_Tipo_Participante_Registro" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="88" max="32767" attributes="0"/>
+              <EmptySpace pref="133" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -65,27 +67,32 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbl_ID" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TextField_Id_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbl_Nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextField_Nombre_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbl_Apellido_Paterno" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextField_Apellido_Paterno_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbl_Apellido_Materno" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextField_Apellido_Materno_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="TextField_Correo_Registro" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TextField_Nombre_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbl_Nombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TextField_Apellido_Paterno_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbl_Apellido_Paterno" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TextField_Apellido_Materno_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbl_Apellido_Materno" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="TextField_Alias_Usuario_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lbl_Alias" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -111,14 +118,22 @@
                   <Component id="lbl_Password" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextField_Tipo_Participante_Registro" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="10" max="32767" attributes="0"/>
               <Component id="btn_Aceptar_Usuario_Registro" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="30" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JTextField" name="TextField_Nombre_Usuario_Registro">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextField_Nombre_Usuario_RegistroActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TextField_Apellido_Paterno_Usuario_Registro">
     </Component>
@@ -185,12 +200,19 @@
         <Property name="text" type="java.lang.String" value="Password"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbl_ID">
+    <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="ID"/>
+        <Property name="text" type="java.lang.String" value="Correo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="TextField_Id_Usuario_Registro">
+    <Component class="javax.swing.JTextField" name="TextField_Correo_Registro">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tipo de Participante"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TextField_Tipo_Participante_Registro">
     </Component>
   </SubComponents>
 </Form>

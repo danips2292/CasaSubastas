@@ -35,12 +35,32 @@ public class Window_Actions_Agents extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btn_Crear_Agente.setText("Crear");
+        btn_Crear_Agente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Crear_AgenteActionPerformed(evt);
+            }
+        });
 
         btn_Suspender_Agente.setText("Suspender");
+        btn_Suspender_Agente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Suspender_AgenteActionPerformed(evt);
+            }
+        });
 
         btn_Reactivar_Agente.setText("Reactivar");
+        btn_Reactivar_Agente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Reactivar_AgenteActionPerformed(evt);
+            }
+        });
 
         btn_Modificar_Agente.setText("Modificar");
+        btn_Modificar_Agente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Modificar_AgenteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -71,6 +91,34 @@ public class Window_Actions_Agents extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_Crear_AgenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Crear_AgenteActionPerformed
+        // TODO add your handling code here:
+        Window_New_Agent Venatana_Creacion_Agente = new Window_New_Agent();
+        Venatana_Creacion_Agente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btn_Crear_AgenteActionPerformed
+
+    private void btn_Suspender_AgenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Suspender_AgenteActionPerformed
+        // TODO add your handling code here:
+        Window_Suspend_Agent Ventana_Suspender_Agente = new Window_Suspend_Agent();
+        Ventana_Suspender_Agente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btn_Suspender_AgenteActionPerformed
+
+    private void btn_Reactivar_AgenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Reactivar_AgenteActionPerformed
+        // TODO add your handling code here:
+        Window_Enable_Agent Ventana_Habilitar_Agente = new Window_Enable_Agent();
+        Ventana_Habilitar_Agente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btn_Reactivar_AgenteActionPerformed
+
+    private void btn_Modificar_AgenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Modificar_AgenteActionPerformed
+        // TODO add your handling code here:
+        Window_Modify_Agent Ventana_Modificar_Agente = new Window_Modify_Agent();
+        this.setVisible(false);
+        Ventana_Modificar_Agente.setVisible(true);
+    }//GEN-LAST:event_btn_Modificar_AgenteActionPerformed
 
     /**
      * @param args the command line arguments

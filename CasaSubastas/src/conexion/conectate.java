@@ -8,33 +8,6 @@ import javax.swing.JOptionPane;
 
 public class conectate {
     Connection conn = null;
-    /*String login="DANIEL\\Daniel";
-    static String password = "";
-    static String url="jdbc:odbc:netbean";
-    Connection conn = null;
-    String URL = "jdbc:sqlserver://localhost:1433;databaseName=CASA_SUBASTAS;integratedSecurity=true;";
-    String USER = "DANIEL\\Daniel";
-    String PASS = "";
-    
-    
-    //String driver = "sun.jdbc.odbc.JdbcOdbcDriver";
-    public conectate() {
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(URL, USER, PASS);
-            //conn = DriverManager.getConnection(url, login, password);
-            if(conn != null){
-                JOptionPane.showMessageDialog(null,"CONEXION EXITOSA");
-            }
-        }catch(SQLException | ClassNotFoundException e){
-            JOptionPane.showMessageDialog(null, e);
-            JOptionPane.showMessageDialog(null,conn);
-        }
-    }
-    
-    public Connection getConnection(){
-        return conn;
-    }*/
     
     public Connection Conectar(){
         

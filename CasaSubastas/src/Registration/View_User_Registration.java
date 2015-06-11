@@ -54,12 +54,20 @@ public class View_User_Registration extends javax.swing.JFrame {
         lbl_Direccion = new javax.swing.JLabel();
         lbl_Telefono = new javax.swing.JLabel();
         lbl_Password = new javax.swing.JLabel();
-        lbl_ID = new javax.swing.JLabel();
-        TextField_Id_Usuario_Registro = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        TextField_Correo_Registro = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        TextField_Tipo_Participante_Registro = new javax.swing.JTextField();
 
         jTextField6.setText("jTextField6");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        TextField_Nombre_Usuario_Registro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextField_Nombre_Usuario_RegistroActionPerformed(evt);
+            }
+        });
 
         TextField_Direccion_Usuario_Registro.setToolTipText("");
 
@@ -86,7 +94,9 @@ public class View_User_Registration extends javax.swing.JFrame {
 
         lbl_Password.setText("Password");
 
-        lbl_ID.setText("ID");
+        jLabel1.setText("Correo");
+
+        jLabel2.setText("Tipo de Participante");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,51 +105,56 @@ public class View_User_Registration extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_Nombre)
-                    .addComponent(lbl_Apellido_Paterno)
-                    .addComponent(lbl_Apellido_Materno)
                     .addComponent(lbl_Alias)
                     .addComponent(lbl_Cedula)
                     .addComponent(lbl_Direccion)
                     .addComponent(lbl_Telefono)
                     .addComponent(lbl_Password)
-                    .addComponent(lbl_ID))
-                .addGap(73, 73, 73)
+                    .addComponent(lbl_Nombre)
+                    .addComponent(lbl_Apellido_Paterno)
+                    .addComponent(lbl_Apellido_Materno)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(55, 55, 55)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(TextField_Apellido_Materno_Usuario_Registro, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .addComponent(TextField_Apellido_Paterno_Usuario_Registro, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .addComponent(TextField_Nombre_Usuario_Registro, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .addComponent(btn_Aceptar_Usuario_Registro)
-                    .addComponent(TextField_Nombre_Usuario_Registro)
-                    .addComponent(TextField_Apellido_Paterno_Usuario_Registro)
-                    .addComponent(TextField_Apellido_Materno_Usuario_Registro)
-                    .addComponent(TextField_Alias_Usuario_Registro)
+                    .addComponent(TextField_Alias_Usuario_Registro, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .addComponent(TextField_Cedula_Usuario_Registro)
                     .addComponent(TextField_Direccion_Usuario_Registro)
                     .addComponent(TextField_Telefono_Usuario_Registro)
                     .addComponent(TextField_Password_Usuario_Registro)
-                    .addComponent(TextField_Id_Usuario_Registro, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE))
-                .addContainerGap(88, Short.MAX_VALUE))
+                    .addComponent(TextField_Correo_Registro)
+                    .addComponent(TextField_Tipo_Participante_Registro))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_ID)
-                    .addComponent(TextField_Id_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbl_Nombre)
+                    .addComponent(TextField_Nombre_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_Apellido_Paterno)
+                    .addComponent(TextField_Apellido_Paterno_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_Apellido_Materno)
+                    .addComponent(TextField_Apellido_Materno_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(6, 6, 6))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(TextField_Correo_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TextField_Nombre_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_Nombre))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TextField_Apellido_Paterno_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_Apellido_Paterno))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TextField_Apellido_Materno_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_Apellido_Materno))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(TextField_Alias_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbl_Alias))
@@ -159,8 +174,12 @@ public class View_User_Registration extends javax.swing.JFrame {
                         .addComponent(TextField_Password_Usuario_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(lbl_Password))
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(TextField_Tipo_Participante_Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(btn_Aceptar_Usuario_Registro)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGap(24, 24, 24))
         );
 
         pack();
@@ -169,9 +188,9 @@ public class View_User_Registration extends javax.swing.JFrame {
     private void btn_Aceptar_Usuario_RegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Aceptar_Usuario_RegistroActionPerformed
                 //SE VALIDAN LOS CAMPOS DE TEXTO ANTES DE SER GUARDADOS PARA VER SI ALGUNO DE ELLOS ESTAN VACIOS, SI ASI FUESE MUESTRA
         //UN MENSAJE CORRESPONDIENTE AL CAMPO QUE ESTA SIN LLENAR
-        if (this.TextField_Id_Usuario_Registro.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "FALTA ESCRIBIR EL ID DEL USUARIO", "VERIFICAR", JOptionPane.WARNING_MESSAGE);
-            this.TextField_Id_Usuario_Registro.requestFocus();
+        if (this.TextField_Tipo_Participante_Registro.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "FALTA ESCRIBIR EL TIPO DEL USUARIO", "VERIFICAR", JOptionPane.WARNING_MESSAGE);
+            this.TextField_Tipo_Participante_Registro.requestFocus();
         } else if (this.TextField_Nombre_Usuario_Registro.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "FALTA ESCRIBIR EL NOMBRE DEL USUARIO", "VERIFICAR", JOptionPane.WARNING_MESSAGE);
             this.TextField_Nombre_Usuario_Registro.requestFocus();
@@ -196,21 +215,25 @@ public class View_User_Registration extends javax.swing.JFrame {
         } else if (this.TextField_Password_Usuario_Registro.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "FALTA ESCRIBIR LA CONTRASENA DEL USUARIO", "VERIFICAR", JOptionPane.WARNING_MESSAGE);
             this.TextField_Password_Usuario_Registro.requestFocus();
-        } else {
+        }else if (this.TextField_Correo_Registro.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "FALTA ESCRIBIR EL CORREO ELECTRONICO DEL USUARIO", "VERIFICAR", JOptionPane.WARNING_MESSAGE);
+            this.TextField_Correo_Registro.requestFocus(); 
+        }else {
             try {
                 int k = JOptionPane.showConfirmDialog(null, "DESEA GUARDAR LOS DATOS DEL USUARIO?", "PREGUNTA", JOptionPane.YES_NO_OPTION);
                 if (k == JOptionPane.YES_OPTION) {
                     try (
-                        PreparedStatement pstm = con.Conectar().prepareStatement("{call registar_usuario (?,?,?,?,?,?,?,?,?)}")) {
-                        pstm.setString(1, TextField_Id_Usuario_Registro.getText());
-                        pstm.setString(2, TextField_Nombre_Usuario_Registro.getText());
-                        pstm.setString(3, TextField_Apellido_Paterno_Usuario_Registro.getText());
-                        pstm.setString(4, TextField_Apellido_Materno_Usuario_Registro.getText());
-                        pstm.setString(5, TextField_Alias_Usuario_Registro.getText());
-                        pstm.setString(6, TextField_Cedula_Usuario_Registro.getText());
+                        PreparedStatement pstm = con.Conectar().prepareStatement("{call agente_registrarParticipante (?,?,?,?,?,?,?,?,?,?)}")) {
+                        pstm.setString(10, TextField_Tipo_Participante_Registro.getText());
+                        pstm.setString(4, TextField_Nombre_Usuario_Registro.getText());
+                        pstm.setString(5, TextField_Apellido_Paterno_Usuario_Registro.getText());
+                        pstm.setString(6, TextField_Apellido_Materno_Usuario_Registro.getText());
+                        pstm.setString(2, TextField_Alias_Usuario_Registro.getText());
+                        pstm.setString(1, TextField_Cedula_Usuario_Registro.getText());
                         pstm.setString(7, TextField_Direccion_Usuario_Registro.getText());
                         pstm.setString(8, TextField_Telefono_Usuario_Registro.getText());
-                        pstm.setString(9, TextField_Password_Usuario_Registro.getText());
+                        pstm.setString(3, TextField_Password_Usuario_Registro.getText());
+                        pstm.setString(9, TextField_Correo_Registro.getText());
                         //convertirlo a binarios
                         ResultSet r = pstm.executeQuery();
                         //pstm.executeUpdate();
@@ -231,6 +254,10 @@ public class View_User_Registration extends javax.swing.JFrame {
                 }
             }
     }//GEN-LAST:event_btn_Aceptar_Usuario_RegistroActionPerformed
+
+    private void TextField_Nombre_Usuario_RegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextField_Nombre_Usuario_RegistroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextField_Nombre_Usuario_RegistroActionPerformed
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -269,19 +296,21 @@ public class View_User_Registration extends javax.swing.JFrame {
     private javax.swing.JTextField TextField_Apellido_Materno_Usuario_Registro;
     private javax.swing.JTextField TextField_Apellido_Paterno_Usuario_Registro;
     private javax.swing.JTextField TextField_Cedula_Usuario_Registro;
+    private javax.swing.JTextField TextField_Correo_Registro;
     private javax.swing.JTextField TextField_Direccion_Usuario_Registro;
-    private javax.swing.JTextField TextField_Id_Usuario_Registro;
     private javax.swing.JTextField TextField_Nombre_Usuario_Registro;
     private javax.swing.JTextField TextField_Password_Usuario_Registro;
     private javax.swing.JTextField TextField_Telefono_Usuario_Registro;
+    private javax.swing.JTextField TextField_Tipo_Participante_Registro;
     private javax.swing.JButton btn_Aceptar_Usuario_Registro;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JLabel lbl_Alias;
     private javax.swing.JLabel lbl_Apellido_Materno;
     private javax.swing.JLabel lbl_Apellido_Paterno;
     private javax.swing.JLabel lbl_Cedula;
     private javax.swing.JLabel lbl_Direccion;
-    private javax.swing.JLabel lbl_ID;
     private javax.swing.JLabel lbl_Nombre;
     private javax.swing.JLabel lbl_Password;
     private javax.swing.JLabel lbl_Telefono;
