@@ -38,8 +38,18 @@ public class Window_Agent extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnRegistar_Nuevos_Participantes.setText("Registar Nuevos Participantes");
+        btnRegistar_Nuevos_Participantes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistar_Nuevos_ParticipantesActionPerformed(evt);
+            }
+        });
 
         btn_Agregar_Tarjeta_Credito.setText("Agregar Tarjeta de Credito");
+        btn_Agregar_Tarjeta_Credito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Agregar_Tarjeta_CreditoActionPerformed(evt);
+            }
+        });
 
         btn_Acciones_Sobre_Partcipante.setText("Acciones sobre un Participante");
 
@@ -89,6 +99,21 @@ public class Window_Agent extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegistar_Nuevos_ParticipantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistar_Nuevos_ParticipantesActionPerformed
+        // TODO add your handling code here:
+        Window_New_User Ventana_Nuevo_Participante = new Window_New_User();
+        this.setVisible(false);
+        Ventana_Nuevo_Participante.setVisible(true);
+    }//GEN-LAST:event_btnRegistar_Nuevos_ParticipantesActionPerformed
+
+    private void btn_Agregar_Tarjeta_CreditoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Agregar_Tarjeta_CreditoActionPerformed
+        // TODO add your handling code here:
+        Window_Add_Card Ventana_Add_Tarjeta_Credito = new Window_Add_Card();
+        this.disable();
+        Ventana_Add_Tarjeta_Credito.setVisible(true);
+        
+    }//GEN-LAST:event_btn_Agregar_Tarjeta_CreditoActionPerformed
 
     /**
      * @param args the command line arguments

@@ -70,22 +70,34 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Listar Subastas"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Listar_Subastas_AdministradorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Listar_Historial_Subastas_Administrador">
       <Properties>
         <Property name="text" type="java.lang.String" value="Listar Historial de ofertas por Subasta "/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Listar_Historial_Subastas_AdministradorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Listar_Historial_Subastas_Usuarios_Administrador">
       <Properties>
         <Property name="text" type="java.lang.String" value="Listar Historial de Subastas por Usuario"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Listar_Historial_Subastas_Usuarios_AdministradorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador">
       <Properties>
         <Property name="text" type="java.lang.String" value="Listar Historial de ofertas ganadoras por Usuario"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Listar_Historial_Ofertas_Ganadoras_Usuario_AdministradorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Modificar_Comision_Administrador">
       <Properties>

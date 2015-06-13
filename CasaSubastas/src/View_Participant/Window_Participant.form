@@ -72,6 +72,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Iniciar Subasta"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Iniciar_SubastaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Reiniciar_Subasta">
       <Properties>
@@ -90,6 +93,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Listar Subastas"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Listar_Subastas_ParticipanteActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Listar_Historial_Ofertas_Subasta_Participante">
       <Properties>

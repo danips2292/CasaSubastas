@@ -40,13 +40,33 @@ public class Window_Manager extends javax.swing.JFrame {
         btn_Acciones_Agentes_Administrador.setText("Acciones sobre Agentes");
 
         btn_Listar_Subastas_Administrador.setText("Listar Subastas");
+        btn_Listar_Subastas_Administrador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Listar_Subastas_AdministradorActionPerformed(evt);
+            }
+        });
 
         btn_Listar_Historial_Subastas_Administrador.setText("Listar Historial de ofertas por Subasta ");
         btn_Listar_Historial_Subastas_Administrador.setToolTipText("");
+        btn_Listar_Historial_Subastas_Administrador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Listar_Historial_Subastas_AdministradorActionPerformed(evt);
+            }
+        });
 
         btn_Listar_Historial_Subastas_Usuarios_Administrador.setText("Listar Historial de Subastas por Usuario");
+        btn_Listar_Historial_Subastas_Usuarios_Administrador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Listar_Historial_Subastas_Usuarios_AdministradorActionPerformed(evt);
+            }
+        });
 
         btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador.setText("Listar Historial de ofertas ganadoras por Usuario");
+        btn_Listar_Historial_Ofertas_Ganadoras_Usuario_Administrador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Listar_Historial_Ofertas_Ganadoras_Usuario_AdministradorActionPerformed(evt);
+            }
+        });
 
         btn_Modificar_Comision_Administrador.setText("Modificar Comision por Subasta");
 
@@ -90,6 +110,34 @@ public class Window_Manager extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_Listar_Historial_Ofertas_Ganadoras_Usuario_AdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Listar_Historial_Ofertas_Ganadoras_Usuario_AdministradorActionPerformed
+        // TODO add your handling code here:
+        Window_Show_Record_Winner_Auction_User Ventana_Historial_Subastas_Ganadoras = new Window_Show_Record_Winner_Auction_User();
+        this.dispose();
+        Ventana_Historial_Subastas_Ganadoras.setVisible(true);
+    }//GEN-LAST:event_btn_Listar_Historial_Ofertas_Ganadoras_Usuario_AdministradorActionPerformed
+
+    private void btn_Listar_Subastas_AdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Listar_Subastas_AdministradorActionPerformed
+        // TODO add your handling code here:
+        Window_Show_Auctions Ventana_Listar_Subastas = new Window_Show_Auctions();
+       this.dispose();
+       Ventana_Listar_Subastas.setVisible(true);
+    }//GEN-LAST:event_btn_Listar_Subastas_AdministradorActionPerformed
+
+    private void btn_Listar_Historial_Subastas_AdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Listar_Historial_Subastas_AdministradorActionPerformed
+        // TODO add your handling code here:
+        Window_Show_Offer_Auctions_Record Ventana_Historial_Ofertas_Subastas = new Window_Show_Offer_Auctions_Record();
+        Ventana_Historial_Ofertas_Subastas.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_Listar_Historial_Subastas_AdministradorActionPerformed
+
+    private void btn_Listar_Historial_Subastas_Usuarios_AdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Listar_Historial_Subastas_Usuarios_AdministradorActionPerformed
+        // TODO add your handling code here:
+        Window_Show_Record_Auction_User Ventana_Historial_Subastas_Usuario = new Window_Show_Record_Auction_User();
+        this.dispose();
+        Ventana_Historial_Subastas_Usuario.setVisible(true);
+    }//GEN-LAST:event_btn_Listar_Historial_Subastas_Usuarios_AdministradorActionPerformed
 
     /**
      * @param args the command line arguments

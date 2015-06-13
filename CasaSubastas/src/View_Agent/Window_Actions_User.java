@@ -30,14 +30,32 @@ public class Window_Actions_User extends javax.swing.JFrame {
         btn_Modificar_Participante = new javax.swing.JButton();
         btn_Suspender_Participantes = new javax.swing.JButton();
         Btn_Reactivar_Participante = new javax.swing.JButton();
+        btnRegresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btn_Modificar_Participante.setText("Modificar");
 
         btn_Suspender_Participantes.setText("Suspender");
+        btn_Suspender_Participantes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Suspender_ParticipantesActionPerformed(evt);
+            }
+        });
 
         Btn_Reactivar_Participante.setText("Reactivar");
+        Btn_Reactivar_Participante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_Reactivar_ParticipanteActionPerformed(evt);
+            }
+        });
+
+        btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -48,7 +66,8 @@ public class Window_Actions_User extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btn_Suspender_Participantes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_Modificar_Participante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Btn_Reactivar_Participante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Btn_Reactivar_Participante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnRegresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(170, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -60,11 +79,34 @@ public class Window_Actions_User extends javax.swing.JFrame {
                 .addComponent(btn_Suspender_Participantes)
                 .addGap(34, 34, 34)
                 .addComponent(Btn_Reactivar_Participante)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addGap(39, 39, 39)
+                .addComponent(btnRegresar)
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_Suspender_ParticipantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Suspender_ParticipantesActionPerformed
+        // TODO add your handling code here:
+        Window_Suspend_User Ventana_Suspender_Participante = new Window_Suspend_User();
+        this.setVisible(false);
+        Ventana_Suspender_Participante.setVisible(true);
+    }//GEN-LAST:event_btn_Suspender_ParticipantesActionPerformed
+
+    private void Btn_Reactivar_ParticipanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Reactivar_ParticipanteActionPerformed
+        // TODO add your handling code here:
+        Window_Enable_User Ventana_Habilitar_Participante = new Window_Enable_User();
+        this.dispose();
+        Ventana_Habilitar_Participante.setVisible(true);
+    }//GEN-LAST:event_Btn_Reactivar_ParticipanteActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        // TODO add your handling code here:
+        Window_Agent Ventana_Agente = new Window_Agent();
+        Ventana_Agente.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,6 +145,7 @@ public class Window_Actions_User extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Reactivar_Participante;
+    private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btn_Modificar_Participante;
     private javax.swing.JButton btn_Suspender_Participantes;
     // End of variables declaration//GEN-END:variables

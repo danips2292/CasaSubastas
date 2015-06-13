@@ -29,6 +29,7 @@
                   <Component id="btn_Suspender_Participantes" max="32767" attributes="0"/>
                   <Component id="btn_Modificar_Participante" alignment="0" max="32767" attributes="0"/>
                   <Component id="Btn_Reactivar_Participante" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btnRegresar" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="170" max="32767" attributes="0"/>
           </Group>
@@ -43,7 +44,9 @@
               <Component id="btn_Suspender_Participantes" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Component id="Btn_Reactivar_Participante" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="111" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <Component id="btnRegresar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="47" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -58,11 +61,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Suspender"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Suspender_ParticipantesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Btn_Reactivar_Participante">
       <Properties>
         <Property name="text" type="java.lang.String" value="Reactivar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Reactivar_ParticipanteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnRegresar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Regresar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegresarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

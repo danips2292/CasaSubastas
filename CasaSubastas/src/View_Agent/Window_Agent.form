@@ -65,11 +65,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Registar Nuevos Participantes"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegistar_Nuevos_ParticipantesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Agregar_Tarjeta_Credito">
       <Properties>
         <Property name="text" type="java.lang.String" value="Agregar Tarjeta de Credito"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_Agregar_Tarjeta_CreditoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Acciones_Sobre_Partcipante">
       <Properties>

@@ -41,6 +41,11 @@ public class Window_Participant extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btn_Iniciar_Subasta.setText("Iniciar Subasta");
+        btn_Iniciar_Subasta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Iniciar_SubastaActionPerformed(evt);
+            }
+        });
 
         btn_Reiniciar_Subasta.setText("Reiniciar Subasta");
 
@@ -52,6 +57,11 @@ public class Window_Participant extends javax.swing.JFrame {
         });
 
         btn_Listar_Subastas_Participante.setText("Listar Subastas");
+        btn_Listar_Subastas_Participante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Listar_Subastas_ParticipanteActionPerformed(evt);
+            }
+        });
 
         btn_Listar_Historial_Ofertas_Subasta_Participante.setText("Historial Ofertas por Subasta");
 
@@ -100,7 +110,24 @@ public class Window_Participant extends javax.swing.JFrame {
 
     private void btn_Ofertar_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Ofertar_ItemActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        Window_Offer_Item Ventana_Ofertar_Item = new Window_Offer_Item();
+        Ventana_Ofertar_Item.setVisible(true);
     }//GEN-LAST:event_btn_Ofertar_ItemActionPerformed
+
+    private void btn_Iniciar_SubastaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Iniciar_SubastaActionPerformed
+        // TODO add your handling code here:
+        Window_New_Auction Ventana_Nueva_Subasta = new Window_New_Auction();
+        this.dispose();
+        Ventana_Nueva_Subasta.setVisible(true);
+    }//GEN-LAST:event_btn_Iniciar_SubastaActionPerformed
+
+    private void btn_Listar_Subastas_ParticipanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Listar_Subastas_ParticipanteActionPerformed
+        // TODO add your handling code here:
+        Window_Show_Auctions Venatana_Lista_Subastas = new Window_Show_Auctions();
+        this.dispose();
+        Venatana_Lista_Subastas.setVisible(true);
+    }//GEN-LAST:event_btn_Listar_Subastas_ParticipanteActionPerformed
 
     /**
      * @param args the command line arguments
